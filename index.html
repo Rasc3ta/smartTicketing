@@ -101,13 +101,18 @@
       </section>
     </main>
     
-    <section class=" text-center flex flex-col items-center gap-8">
+    <section class=" text-center flex flex-col items-center gap-8 mb-32 rounded-[80px] border-[#1dd100] border-t-[2px] p-32">
       <div>
         <h2 class="text-5xl font-bold">P.H Paribahan</h2>
         
         <p class="text-xl max-w-[750px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
     </div>
-      <div class="mt-10 flex flex-row flex-nowrap gap-64 ">
+    <div>
+      <!-- ticket layout  -->
+    <div class="flex p-8 mx-10 gap-10">
+    <div>
+      <!-- bus info heading -->
+        <div class=" flex flex-row flex-nowrap gap-20 mb-9">
         <!-- bus info -->
         <div class="flex flex-row flex-nowrap gap-3">
           <img src="./images/bus-logo.png" class="object-contain">
@@ -118,9 +123,41 @@
         </div>
         <!-- seats left -->
         <button class=" btn btn-outline border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain">40 Seats left</button>
-
       </div>
-    
+      <!-- bus info details -->
+      <div>
+        <!-- details -->
+        <div class="px-8 flex flex-col ">
+          <!-- route -->
+
+          <div class="flex justify-between border-b-[1px] border-dashed border-[#0307124d] pb-5 mb-5">
+            <span class="font-semibold text-lg text-[#03071299]">Route</span>
+            <span class="font-semibold text-lg text-[#030712]">Dhaka-Sylhet</span>
+          </div>
+          <!-- departure time  -->
+          <div class="flex justify-between border-b-[1px] border-dashed border-[#0307124d] pb-5 mb-5">
+            <span class="font-semibold text-lg text-[#03071299]">Departure Time</span>
+            <span class="font-semibold text-lg text-[#030712]">9:00 PM</span>
+          </div>
+          <!-- boarding point and time -->
+          <div class="flex flex-row justify-between gap-10 font-semibold text-lg text-[#03071299]">
+              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</span>
+              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Dropping Point - Bogura</span>
+              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Est.Time - 11 Hour</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- devider -->
+      <div class="   border-l-[2px] border-dashed border-[#1DD100] after:px-[1px] "></div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./images/fare.png" >
+        <h2 class="text-3xl font-bold">
+          550 Taka
+        </h2>
+        <p class="text-2xl">Per Seat</p>
+      </div>
+    </div>
     </section>
     
 </body>
