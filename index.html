@@ -22,14 +22,14 @@
 </head>
 <body>
 
-    <header>
+    <header class=" mx-auto max-w-[1170px] mb-32">
         <!-- navbar -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 flex flex-nowrap justify-between">
                 <div class="navbar-start">
                     <!-- small or smaller screens -->
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                  <div class="dropdown  md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -39,23 +39,64 @@
                         <li><a>Search</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">P-Ticket</a>
+                  <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
                 </div>
                 <!-- mid and bigger screens -->
-                <div class="navbar-center hidden sm:flex">
-                    <ul class="menu menu-horizontal bg-base-200 rounded-box">
+                <div class="">
+                    <ul class=" hidden md:flex flex-nowrap menu menu-horizontal bg-base-200 rounded-box text-lg font-medium">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                       </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn text-[#1DD100]">Bus <img src="./images/bus-icon.png" alt=""></a>
-                </div>
+                  <a class="btn text-[#1DD100] font-bold text-xl  justify-self-end border-[#1DD100] shadow ">Bus <img src="./images/bus-icon.png"></a>
               </div>
         </nav>
+        <!-- banner -->
+        <section class="text-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center text-white rounded-3xl p-20 pb-36 scroll-px-52 flex flex-col gap-8 ">
+          <h2 class="font-extrabold text-6xl flex flex-col gap-8">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h2>
+          <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+          <button class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Ticket</button>
+        </section>
     </header>
+
+    <main>
+      <section class="">
+        <h2 class="mb-10 text-center text-4xl font-bold">Best offers for you</h2>
+        <div class="flex items-center justify-center  gap-6"> 
+          <!-- coupon 1 -->
+          <div class="flex flex-nowrap  bg-[#FFBF0F] p-10 rounded-3xl relative">
+            <div class="mr-24">
+              <h3 class="text-3xl font-extrabold">15% OFF</h3>
+              <p class="text-lg">on your next purchase</p>
+              <p class="text-sm">used by January 24</p>
+            </div>
+            <img src="./images/cupon-devider.png" class="absolute h-full top-0 right-[35%]">
+            <div class="">
+              <h3 class="text-xl font-extrabold">NEW15</h3>
+              <p class="text-lg ">Coupon Code</p>
+            </div>
+
+          </div>
+          <!-- coupon 2 -->
+          <div class="flex flex-nowrap  bg-[#F78C9C] p-10 rounded-3xl relative">
+            <div class="mr-24">
+              <h3 class="text-3xl font-extrabold">15% OFF</h3>
+              <p class="text-lg">on your next purchase</p>
+              <p class="text-sm">used by January 24</p>
+            </div>
+            <img src="./images/cupon-devider.png" class="absolute h-full top-0 right-[35%]">
+            <div class="">
+              <h3 class="text-xl font-extrabold">NEW15</h3>
+              <p class="text-lg ">Coupon Code</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
     
 </body>
 </html>
