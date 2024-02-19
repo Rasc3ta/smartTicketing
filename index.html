@@ -62,9 +62,9 @@
     </header>
 
     <main>
-      <section class="">
+      <section class="flex flex-col items-center mb-32">
         <h2 class="mb-10 text-center text-4xl font-bold">Best offers for you</h2>
-        <div class="flex items-center justify-center  gap-6"> 
+        <div class="flex items-center justify-center  gap-6 mb-12"> 
           <!-- coupon 1 -->
           <div class="flex flex-nowrap  bg-[#FFBF0F] p-10 rounded-3xl relative">
             <div class="mr-24">
@@ -82,21 +82,46 @@
           <!-- coupon 2 -->
           <div class="flex flex-nowrap  bg-[#F78C9C] p-10 rounded-3xl relative">
             <div class="mr-24">
-              <h3 class="text-3xl font-extrabold">15% OFF</h3>
+              <h3 class="text-3xl font-extrabold">20% OFF</h3>
               <p class="text-lg">on your next purchase</p>
               <p class="text-sm">used by January 24</p>
             </div>
             <img src="./images/cupon-devider.png" class="absolute h-full top-0 right-[35%]">
             <div class="">
-              <h3 class="text-xl font-extrabold">NEW15</h3>
+              <h3 class="text-xl font-extrabold">Couple 20</h3>
               <p class="text-lg ">Coupon Code</p>
             </div>
 
           </div>
 
         </div>
+        
+        <button class=" btn btn-outline border-[#1DD100] text-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-none ">See All Offers</button>
+        
       </section>
     </main>
+    
+    <section class=" text-center flex flex-col items-center gap-8">
+      <div>
+        <h2 class="text-5xl font-bold">P.H Paribahan</h2>
+        
+        <p class="text-xl max-w-[750px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+    </div>
+      <div class="mt-10 flex flex-row flex-nowrap gap-64 ">
+        <!-- bus info -->
+        <div class="flex flex-row flex-nowrap gap-3">
+          <img src="./images/bus-logo.png" class="object-contain">
+          <div class="w-[380px]">
+          <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start">Greenline Paribahan</h3>
+          <p class="text-start">Coach-009-WEB ! AC_Business</p>
+        </div>
+        </div>
+        <!-- seats left -->
+        <button class=" btn btn-outline border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain">40 Seats left</button>
+
+      </div>
+    
+    </section>
     
 </body>
 </html>
