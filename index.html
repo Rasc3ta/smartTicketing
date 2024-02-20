@@ -22,11 +22,11 @@
 </head>
 <body>
 
-    <header class=" mx-auto max-w-[1170px] mb-32">
+  <header class=" mx-auto max-w-[90%] mb-32">
         <!-- navbar -->
         <nav>
             <div class="navbar bg-base-100 flex flex-nowrap justify-between">
-                <div class="navbar-start">
+                <div class="navbar-start basis-0">
                     <!-- small or smaller screens -->
                   <div class="dropdown  md:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost">
@@ -59,11 +59,12 @@
           <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
           <button class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Ticket</button>
         </section>
-    </header>
+  </header>
 
-    <main>
-      <section class="flex flex-col items-center mb-32">
-        <h2 class="mb-10 text-center text-4xl font-bold">Best offers for you</h2>
+  <main class="">
+    <section class="max-w-[90%] mx-auto flex flex-col items-stretch mb-32">
+      <h2 class="mb-10 text-center text-4xl font-bold">Best offers for you</h2>
+      <div class="flex flex-col items-center">
         <div class="flex items-center justify-center  gap-6 mb-12"> 
           <!-- coupon 1 -->
           <div class="flex flex-nowrap  bg-[#FFBF0F] p-10 rounded-3xl relative">
@@ -93,281 +94,331 @@
             </div>
 
           </div>
+          </div>
 
-        </div>
-        
-        <button class=" btn btn-outline border-[#1DD100] text-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-none ">See All Offers</button>
-        
-      </section>
-    </main>
+        <button class="mx-auto btn btn-outline border-[#1DD100] text-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-none ">See All Offers</button>
+      </div>
+    </section>
     
-    <section class=" text-center flex flex-col items-center gap-8 mb-32 rounded-[80px] border-[#1dd100] border-t-[2px] p-32 bg-[#f7f7f7]">
+    <!-- main section wrapper -->
+  <div class="rounded-t-[80px] border-[#1dd100] border-t-[2px] bg-[#f7f7f7] pt-28">
+    <section class=" text-center flex flex-col items-center gap-8 mb-32   pt-0 max-w-[90%] mx-auto ">
+        <div>
+          <h2 class="text-5xl mb-6 font-bold">P.H Paribahan</h2>
+          
+          <p class="text-xl max-w-[750px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      </div>
       <div>
-        <h2 class="text-5xl font-bold">P.H Paribahan</h2>
-        
-        <p class="text-xl max-w-[750px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-    </div>
-    <div>
-      <!-- ticket layout  -->
-    <div class="flex p-8 mx-10 gap-16 relative bg-white  rounded-3xl">
-    <div>
-      <!-- bus info heading -->
-        <div class=" flex flex-row flex-nowrap gap-20 mb-9">
-        <!-- bus info -->
-        <div class="flex flex-row flex-nowrap gap-3">
-          <img src="./images/bus-logo.png" class="object-contain">
-          <div class="w-[380px]">
-          <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start">Greenline Paribahan</h3>
-          <p class="text-start">Coach-009-WEB ! AC_Business</p>
+        <!-- ticket layout  -->
+      <div class="flex p-8  gap-16 relative bg-white rounded-3xl">
+        <!-- left side -->
+        <div>
+        <!-- bus info heading -->
+        <div class=" flex flex-row flex-nowrap justify-between mb-9">
+            <!-- bus info -->
+          <div class="flex flex-row flex-nowrap gap-3">
+            <img src="./images/bus-logo.png" class="object-contain">
+            <div class="w-[380px]">
+            <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start">Greenline Paribahan</h3>
+            <p class="text-start">Coach-009-WEB ! AC_Business</p>
+          </div>
+          </div>
+          <!-- seats left -->
+          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain">40 Seats left</button>
         </div>
-        </div>
-        <!-- seats left -->
-        <button class=" btn btn-outline border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain">40 Seats left</button>
-      </div>
-      <!-- bus info details -->
-      <div>
-        <!-- details -->
-        <div class="px-8 flex flex-col ">
-          <!-- route -->
+        <!-- bus info details -->
+        <div>
+          <!-- details -->
+          <div class=" flex flex-col ">
+            <!-- route -->
 
-          <div class="flex justify-between border-b-[2px] border-dashed border-[#0307124d] pb-5 mb-5">
-            <span class="font-semibold text-lg text-[#03071299]">Route</span>
-            <span class="font-semibold text-lg text-[#030712]">Dhaka-Sylhet</span>
-          </div>
-          <!-- departure time  -->
-          <div class="flex justify-between border-b-[2px] border-dashed border-[#0307124d] pb-5 mb-5">
-            <span class="font-semibold text-lg text-[#03071299]">Departure Time</span>
-            <span class="font-semibold text-lg text-[#030712]">9:00 PM</span>
-          </div>
-          <!-- boarding point and time -->
-          <div class="flex flex-row justify-between gap-10 font-semibold text-lg text-[#03071299]">
-              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</span>
-              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Dropping Point - Bogura</span>
-              <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Est.Time - 11 Hour</span>
+            <div class="flex justify-between border-b-[2px] border-dashed border-[#0307124d] pb-5 mb-5">
+              <span class="font-semibold text-lg text-[#03071299]">Route</span>
+              <span class="font-semibold text-lg text-[#030712]">Dhaka-Sylhet</span>
+            </div>
+            <!-- departure time  -->
+            <div class="flex justify-between border-b-[2px] border-dashed border-[#0307124d] pb-5 mb-5">
+              <span class="font-semibold text-lg text-[#03071299]">Departure Time</span>
+              <span class="font-semibold text-lg text-[#030712]">9:00 PM</span>
+            </div>
+            <!-- boarding point and time -->
+            <div class="flex flex-row justify-between gap-10 font-semibold text-lg text-[#03071299]">
+                <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</span>
+                <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Dropping Point - Bogura</span>
+                <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Est.Time - 11 Hour</span>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      <!-- devider -->
-      <div class="   border-l-[2px] border-dashed border-[#1DD100] after:px-[1px] "></div>
-      <!-- <img src="./images/info-devider.png" class="  absolute max-h-full bottom-0 right-[16%]"> -->
-      <div class="flex flex-col items-center justify-center">
-        <img src="./images/fare.png" >
-        <h2 class="text-3xl font-bold">
-          550 Taka
-        </h2>
-        <p class="text-2xl">Per Seat</p>
-      </div>
-    </div>
-    <!-- seat selection and billing -->
-    <div class="p-8 mt-7 grid grid-cols-5 ">
-      <!-- seat selection -->
-      <div class="col-span-3 bg-blue-400 p-8 rounded-l-3xl">
-        <h2 class="text-start text-2xl pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
-        <h3 class="flex justify-between my-4 pb-4 border-b-[2px] border-dashed border-[#0307124d]">
-          <span class="flex gap-1 items-center ">
-            <img src="./images/seat-gray.png">
-            Available
-          </span>
-          <span class="flex gap-1 items-center text-[#1DD100]">
-            <img src="./images/seat-green-filled.png">
-            Selected
-          </span>
-        </h3>
-        <div class="grid grid-cols-6 grid-rows-4 gap-4">
-                                <!-- seats -->
-                                
-          <div class="row-span-1 col-start-6">
-            <div class="px-6 py-3 bg-[#0307121a] rounded-xl"><img src="./images/steering-wheel.png"></div>
-          </div>
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">A</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A4</button>
-          </div>
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">B</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B4</button>
-          </div>
-
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">C</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C4</button>
-          </div>
-
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">D</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D4</button>
-          </div>
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">E</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E4</button>
-          </div>
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">F</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F4</button>
-          </div>
-
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">G</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G4</button>
-          </div>
-
-                                <!-- row start -->
-          <div class="row-span-1 col-start-0">
-            <div class="px-6 py-3 bg-white rounded-xl">H</div>
-          </div>
-
-          <div class="row-span-1 col-start-2">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H1</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-3">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H2</button>
-          </div>
-                                
-          <div class="row-span-1 col-start-5">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H3</button>
-          </div>
-
-          <div class="row-span-1 col-start-6">
-            <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H4</button>
-          </div>
-
-
-
-
+        <!-- devider -->
+        <div class="   border-l-[2px] border-dashed border-[#1DD100] after:px-[1px] "></div>
+        <!-- right side -->
+        <div class="flex flex-col items-center justify-center">
+          <img src="./images/fare.png" >
+          <h2 class="text-3xl font-bold">
+            550 Taka
+          </h2>
+          <p class="text-2xl">Per Seat</p>
         </div>
       </div>
-      <!-- billing section -->
-      <div class="col-span-2 bg-red-400 rounded-r-3xl">
-        <h1>shit</h1>
-        <h1>shit</h1>
-        <h1>shit</h1>
-        <h1>shit</h1>
-        <h1>shit</h1>
-        <h1>shit</h1>
+      <!-- seat selection and billing -->
+      <div class=" mt-7 grid grid-cols-5 ">
+        <!-- seat selection -->
+        <div class="col-span-3 bg-white p-8 rounded-l-3xl">
+          <h2 class="text-start text-2xl pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
+          <h3 class="flex justify-between my-4 pb-4 border-b-[2px] border-dashed border-[#0307124d]">
+            <span class="flex gap-1 items-center ">
+              <img src="./images/seat-gray.png">
+              Available
+            </span>
+            <span class="flex gap-1 items-center text-[#1DD100]">
+              <img src="./images/seat-green-filled.png">
+              Selected
+            </span>
+          </h3>
+          <div class="grid grid-cols-6 grid-rows-4 gap-4 ">
+                                  <!-- seats -->
+                                  
+            <div class="row-span-1 col-start-6">
+              <div class="px-6 py-3 bg-[#0307121a] rounded-xl"><img src="./images/steering-wheel.png"></div>
+            </div>
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">A</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A4</button>
+            </div>
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">B</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B4</button>
+            </div>
+
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">C</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C4</button>
+            </div>
+
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">D</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D4</button>
+            </div>
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">E</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E4</button>
+            </div>
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">F</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F4</button>
+            </div>
+
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">G</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G4</button>
+            </div>
+
+                                  <!-- row start -->
+            <div class="row-span-1 col-start-0">
+              <div class="px-6 py-3 bg-white rounded-xl">H</div>
+            </div>
+
+            <div class="row-span-1 col-start-2">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H1</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-3">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H2</button>
+            </div>
+                                  
+            <div class="row-span-1 col-start-5">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H3</button>
+            </div>
+
+            <div class="row-span-1 col-start-6">
+              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H4</button>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <!-- billing section -->
+        <div class="p-8 col-span-2 bg-red-400 rounded-r-3xl border-l-2 border-dashed border-[#0307124d]">
+          <h2 class="text-start text-2xl mb-6 pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
+        <!-- billing -->
+          <div class="p-4 bg-[#f7f8f8] rounded-xl">
+            <!-- head -->
+            <div class="w-full flex flex-row flex-nowrap justify-between  border-b-[2px] border-dashed border-[#0307124d] pb-4 mb-4">
+              <span>Seat</span>
+              <span>Class</span>
+              <span>Price</span>
+            </div>
+            <!-- entries -->
+            <div class="border-b-2 border-solid border-[#0307124d] pb-4 mb-4">
+              <!-- ticket - 1 -->
+              <div class="w-full flex flex-row flex-nowrap justify-between">
+                <span>C2</span>
+                <span>Economy</span>
+                <span>550</span>
+              </div>
+              <!-- ticket - 2 -->
+              <div class="w-full flex flex-row flex-nowrap justify-between">
+                <span>C2</span>
+                <span>Economy</span>
+                <span>550</span>
+              </div>
+              <!-- ticket - 3 -->
+              <div class="w-full flex flex-row flex-nowrap justify-between">
+                <span>C2</span>
+                <span>Economy</span>
+                <span>550</span>
+              </div>
+              <!-- ticket - 4 -->
+              <div class="w-full flex flex-row flex-nowrap justify-between">
+                <span>C2</span>
+                <span>Economy</span>
+                <span>550</span>
+              </div>
+            </div>
+              <!-- foot -->
+              <div class="w-full flex flex-row flex-nowrap justify-between pb-4 mb-4">
+                <span>Total Price</span>
+                <span>BDT <span id="price">0</span></span>
+              </div>
+          
+          <!-- coupon code -->
+          <div class="bg-white p-2 rounded-xl flex flex-nowrap justify-between">
+            <input type="text"  placeholder="Have any coupon?" class="bg-white focus:outline-none min-w-[150px]">
+            <button class="btn bg-[#1DD100] border-none text-white hover:bg-[#1DD10099]">Apply</button>
+          </div>
+
+          <div class="flex flex-row flex-nowrap justify-between  w-full mt-6">
+            <span>Grand Total</span>
+            <span>BDT <span>0000</span></span>
+          </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+</main>
 
     
 </body>
