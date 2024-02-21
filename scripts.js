@@ -74,8 +74,29 @@ const applyCoupon = () => {
 
 }
 
+// next button section
+
+const makeAvailable = (Event) => {
+    const nextButton = document.getElementById('nextButton');
+
+    if (seatsSelected.length > 0) {
+
+        nextButton.removeAttribute('disabled');
+        
+    }
+    
+
+}
+
+
+
+
 
 // adding event listeners
+
+// adding next button availability 
+const phoneInput = document.getElementById('phone');
+phoneInput.addEventListener('keyup', makeAvailable)
 
 
 // adding event listener to seats
