@@ -1,11 +1,11 @@
-
+// seat selection section
 const seatsSelected = [];
 
 const tickets = document.querySelectorAll('#ticket');
 
 const selectSeat = (Event) => {
     const seatSelected = Event.target;
-    if (seatsSelected.length < 4) {
+    if (seatsSelected.length < 4 && !seatsSelected.includes(seatSelected)) {
         seatsSelected.push(seatSelected);
 
         // adding 1 to selected seat count
@@ -15,7 +15,6 @@ const selectSeat = (Event) => {
         // deducting 1 from total seat count
         const seatLeft = document.getElementById('seatCount');
         seatLeft.innerText = parseInt(seatLeft.innerText) - 1;
-        console.log("seats left : " + parseInt(seatLeft.innerText));
 
         // changing bg color of selected seat
         seatSelected.style.backgroundColor = "#1DD100";
@@ -39,6 +38,41 @@ const selectSeat = (Event) => {
 
 
 
+// coupon section
+
+const coupons = {
+        "NEW15" : .15, "Couple 20" : .20
+    }
+
+
+
+const applyCoupon = () => {
+
+    const input = document.getElementById('couponInput');
+
+    if (Object.keys(coupons).includes(input.value) && seatsSelected.length === 4) {
+
+        const totalPrice = parseFloat(document.getElementById('totalPrice').innerText);
+        
+        const grandTotal = document.getElementById('grandTotal');
+        
+        const discountAmount = document.getElementById('discountAmount');
+
+        //updating discount amount 
+        discountAmount.innerText = totalPrice * coupons[input.value];
+        
+        // showing discount amount
+        discountAmount.parentElement.parentElement.classList.remove('hidden');
+        
+        input.parentElement.classList.remove('hidden');
+        // updating grand total
+        grandTotal.innerText = totalPrice - parseFloat(discountAmount.innerText);
+
+        // hiding coupon input section
+        input.parentElement.classList.add('hidden');
+    }
+
+}
 
 
 // adding event listeners
@@ -50,3 +84,11 @@ const seatList = document.querySelectorAll('.seat');
 for (let seat of seatList) {
     seat.addEventListener('click', selectSeat);
 }
+
+
+
+// adding event listener to apply coupon button
+
+const couponButton = document.getElementById('applyCoupon');
+
+couponButton.addEventListener('click', applyCoupon);

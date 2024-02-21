@@ -357,11 +357,15 @@
                 <span>Total Price</span>
                 <span>BDT <span id="totalPrice">0</span></span>
               </div>
+              <div id="discount" class="hidden w-full flex flex-row flex-nowrap justify-between pb-4 mb-4 font-medium">
+                <span>Discount Amount</span>
+                <span>BDT <span id="discountAmount">0</span></span>
+              </div>
           
           <!-- coupon code -->
           <div class="bg-white p-2 rounded-xl flex flex-nowrap justify-between">
-            <input type="text"  placeholder="Have any coupon?" class="bg-white focus:outline-none min-w-[150px]">
-            <button class="btn bg-[#1DD100] border-none text-white hover:bg-[#1DD10099]">Apply</button>
+            <input id="couponInput" type="text"  placeholder="Have any coupon?" class="bg-white focus:outline-none min-w-[150px]">
+            <button id="applyCoupon" class="btn bg-[#1DD100] border-none text-white hover:bg-[#1DD10099]">Apply</button>
           </div>
           <!-- grand total -->
           <div class="flex flex-row flex-nowrap justify-between  w-full mt-6 font-medium">
