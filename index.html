@@ -12,10 +12,31 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
+<!-- font -->
+
+<!-- raleway : -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- inter:  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 <!-- custom css -->
+
 
 <style>
 
+.interFont {
+  font-family: "Inter", sans-serif;
+}
+
+.ralewayFont {
+  font-family: "Raleway", sans-serif;
+}
     
 </style>
 
@@ -24,7 +45,7 @@
 
   <header class=" mx-auto max-w-[90%] mb-32">
         <!-- navbar -->
-        <nav>
+        <nav class="ralewayFont">
             <div class="navbar bg-base-100 flex flex-nowrap justify-between">
                 <div class="navbar-start basis-0">
                     <!-- small or smaller screens -->
@@ -55,17 +76,17 @@
         </nav>
         <!-- banner -->
         <section class="text-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center text-white rounded-3xl p-20 pb-36 scroll-px-52 flex flex-col gap-8 ">
-          <h2 class="font-extrabold text-6xl flex flex-col gap-8">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h2>
-          <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-          <button class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Ticket</button>
+          <h2 class=" ralewayFont font-extrabold text-6xl flex flex-col gap-8">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h2>
+          <p class="interFont">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+          <button class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Tickets</button>
         </section>
   </header>
 
   <main class="">
     <section class="max-w-[90%] mx-auto flex flex-col items-stretch mb-32">
-      <h2 class="mb-10 text-center text-4xl font-bold">Best offers for you</h2>
+      <h2 class="mb-10 text-center text-4xl font-bold ralewayFont">Best offers for you</h2>
       <div class="flex flex-col items-center">
-        <div class="flex items-center justify-center  gap-6 mb-12"> 
+        <div class="flex items-center justify-center  gap-6 mb-12 interFont"> 
           <!-- coupon 1 -->
           <div class="flex flex-nowrap  bg-[#FFBF0F] p-10 rounded-3xl relative">
             <div class="mr-24">
@@ -74,8 +95,8 @@
               <p class="text-sm">used by January 24</p>
             </div>
             <img src="./images/cupon-devider.png" class="absolute h-full top-0 right-[35%]">
-            <div class="">
-              <h3 class="text-xl font-extrabold">NEW15</h3>
+            <div class="ralewayFont">
+              <h3 class="text-xl font-extrabold ">NEW15</h3>
               <p class="text-lg ">Coupon Code</p>
             </div>
 
@@ -88,7 +109,7 @@
               <p class="text-sm">used by January 24</p>
             </div>
             <img src="./images/cupon-devider.png" class="absolute h-full top-0 right-[35%]">
-            <div class="">
+            <div class="ralewayFont">
               <h3 class="text-xl font-extrabold">Couple 20</h3>
               <p class="text-lg ">Coupon Code</p>
             </div>
@@ -96,7 +117,7 @@
           </div>
           </div>
 
-        <button class="mx-auto btn btn-outline border-[#1DD100] text-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-none ">See All Offers</button>
+        <button class="mx-auto btn btn-outline border-[#1DD100] text-[#1DD100] hover:bg-[#1DD100] hover:text-white hover:border-none ralewayFont font-bold text-xl">See All Offers</button>
       </div>
     </section>
     
@@ -104,9 +125,9 @@
   <div class="rounded-t-[80px] border-[#1dd100] border-t-[2px] bg-[#f7f7f7] pt-28 pb-20">
     <section class=" text-center flex flex-col items-center gap-8 mb-32   pt-0 max-w-[90%] mx-auto ">
         <div>
-          <h2 class="text-5xl mb-6 font-bold">P.H Paribahan</h2>
+          <h2 class="text-5xl mb-6 font-bold ralewayFont">P.H Paribahan</h2>
           
-          <p class="text-xl max-w-[750px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <p class="text-xl max-w-[750px] interFont">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
       </div>
       <div>
         <!-- ticket layout  -->
@@ -119,17 +140,17 @@
           <div class="flex flex-row flex-nowrap gap-3">
             <img src="./images/bus-logo.png" class="object-contain">
             <div class="w-[380px]">
-            <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start">Greenline Paribahan</h3>
-            <p class="text-start">Coach-009-WEB ! AC_Business</p>
+            <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start ralewayFont">Greenline Paribahan</h3>
+            <p class="text-start interFont">Coach-009-WEB ! AC_Business</p>
           </div>
           </div>
           <!-- seats left -->
-          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain">40 Seats left</button>
+          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain interFont">40 Seats left</button>
         </div>
         <!-- bus info details -->
         <div>
           <!-- details -->
-          <div class=" flex flex-col ">
+          <div class=" flex flex-col ralewayFont">
             <!-- route -->
 
             <div class="flex justify-between border-b-[2px] border-dashed border-[#0307124d] pb-5 mb-5">
@@ -142,7 +163,7 @@
               <span class="font-semibold text-lg text-[#030712]">9:00 PM</span>
             </div>
             <!-- boarding point and time -->
-            <div class="flex flex-row justify-between gap-10 font-semibold text-lg text-[#03071299]">
+            <div class="flex flex-row justify-between gap-10 font-semibold text-lg text-[#03071299] interFont">
                 <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</span>
                 <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Dropping Point - Bogura</span>
                 <span class="p-4 text-sm bg-[#0307120D] rounded-xl">Est.Time - 11 Hour</span>
@@ -162,10 +183,10 @@
         </div>
       </div>
       <!-- seat selection and billing -->
-      <div class=" mt-7 grid grid-cols-5 ">
+      <div class=" mt-7 grid grid-cols-5 interFont">
         <!-- seat selection -->
         <div class="col-span-3 bg-white p-8 rounded-l-3xl">
-          <h2 class="text-start text-2xl pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
+          <h2 class="text-start text-2xl font-semibold pb-6 border-b-[2px] border-dashed border-[#0307124d] ralewayFont">Select Your Seat</h2>
           <h3 class="flex justify-between my-4 pb-4 border-b-[2px] border-dashed border-[#0307124d]">
             <span class="flex gap-1 items-center ">
               <img src="./images/seat-gray.png">
@@ -361,11 +382,11 @@
         </div>
         <!-- billing section -->
         <div class="p-8 col-span-2 bg-white rounded-r-3xl border-l-2 border-dashed border-[#0307124d]">
-          <h2 class="text-start text-2xl mb-6 pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
+          <h2 class="text-start text-2xl ralewayFont font-semibold mb-6 pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
         <!-- billing -->
           <div class="p-4 bg-[#f7f8f8] rounded-xl">
             <!-- head -->
-            <div class="w-full flex flex-row flex-nowrap justify-between  border-b-[2px] border-dashed border-[#0307124d] pb-4 mb-4">
+            <div class="w-full flex flex-row flex-nowrap justify-between  border-b-[2px] border-dashed border-[#0307124d] pb-4 mb-4 font-medium">
               <span>Seat<sup class="bg-[#1dd100] px-[6px] rounded-[5px] text-white text-xs">4</sup></span>
               <span>Class</span>
               <span>Price</span>
@@ -398,7 +419,7 @@
               </div>
             </div>
               <!-- foot -->
-              <div class="w-full flex flex-row flex-nowrap justify-between pb-4 mb-4">
+              <div class="w-full flex flex-row flex-nowrap justify-between pb-4 mb-4 font-medium">
                 <span>Total Price</span>
                 <span>BDT <span id="price">0</span></span>
               </div>
@@ -409,22 +430,22 @@
             <button class="btn bg-[#1DD100] border-none text-white hover:bg-[#1DD10099]">Apply</button>
           </div>
 
-          <div class="flex flex-row flex-nowrap justify-between  w-full mt-6">
+          <div class="flex flex-row flex-nowrap justify-between  w-full mt-6 font-medium">
             <span>Grand Total</span>
             <span>BDT <span>0000</span></span>
           </div>
           </div>
           <!-- user info -->
           <div class="pb-20">
-            <label for="name" class="flex flex-col text-start mt-6 gap-2 ">Passenger Name*<input type="text" id="name" placeholder="Enter Your Name" class="focus:outline-none p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
+            <label for="name" class="flex flex-col text-start mt-6 gap-2 font-semibold">Passenger Name*<input type="text" id="name" placeholder="Enter Your Name" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
 
-            <label for="name" class="flex flex-col text-start mt-6 gap-2 ">Phone Number*<input type="text" id="name" placeholder="Enter Your phone number" class="focus:outline-none p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
+            <label for="name" class="flex flex-col text-start mt-6 gap-2 font-semibold">Phone Number*<input type="text" id="name" placeholder="Enter Your phone number" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
             
-            <label for="name" class="flex mb-6 flex-col text-start mt-6 gap-2 ">Email ID<input type="text" id="name" placeholder="Enter your email id" class="focus:outline-none p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
+            <label for="name" class="flex mb-6 flex-col text-start mt-6 gap-2 font-semibold">Email ID<input type="text" id="name" placeholder="Enter your email id" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
 
             <!-- <button class="btn bg-[#1dd100] w-full border-none text-white hover:bg-[#1dd10099]">Next</button> -->
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn bg-[#1dd100] w-full border-none text-white hover:bg-[#1dd10099]" onclick="my_modal_5.showModal()">Next</button>
+            <button class="btn ralewayFont font-extrabold text-xl bg-[#1dd100] w-full border-none text-white hover:bg-[#1dd10099]" onclick="my_modal_5.showModal()">Next</button>
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box  flex flex-col items-center p-10">
                 <img src="./images/success.png" >
