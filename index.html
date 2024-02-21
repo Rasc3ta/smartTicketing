@@ -75,10 +75,10 @@
               </div>
         </nav>
         <!-- banner -->
-        <section class="text-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center text-white rounded-3xl p-20 pb-36 scroll-px-52 flex flex-col gap-8 ">
+        <section class="text-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center text-white rounded-3xl p-5 lg:p-20 pb-36 scroll-px-52 flex flex-col gap-8 ">
           <h2 class=" ralewayFont font-extrabold text-6xl flex flex-col gap-8">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h2>
-          <p class="interFont">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-          <button class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Tickets</button>
+          <p class="interFont">The best place for booking bus tickets. Find the best deals for your travels.</p>
+          <a href="#mainSection" class="btn bg-[#1DD100] border-none items-center max-w-[200px] self-center">Buy Tickets</a>
         </section>
   </header>
 
@@ -86,7 +86,7 @@
     <section class="max-w-[90%] mx-auto flex flex-col items-stretch mb-32">
       <h2 class="mb-10 text-center text-4xl font-bold ralewayFont">Best offers for you</h2>
       <div class="flex flex-col items-center">
-        <div class="flex items-center justify-center  gap-6 mb-12 interFont"> 
+        <div class="flex flex-col lg:flex-row items-center justify-center  gap-6 mb-12 interFont"> 
           <!-- coupon 1 -->
           <div class="flex flex-nowrap  bg-[#FFBF0F] p-10 rounded-3xl relative">
             <div class="mr-24">
@@ -123,29 +123,29 @@
     
     <!-- main section wrapper -->
   <div class="rounded-t-[80px] border-[#1dd100] border-t-[2px] bg-[#f7f7f7] pt-28 pb-20">
-    <section class=" text-center flex flex-col items-center gap-8 mb-32   pt-0 max-w-[90%] mx-auto ">
+    <section id="mainSection" class=" text-center flex flex-col items-center gap-8 mb-32   pt-0 max-w-[90%] mx-auto ">
         <div>
           <h2 class="text-5xl mb-6 font-bold ralewayFont">P.H Paribahan</h2>
           
-          <p class="text-xl max-w-[750px] interFont">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <p class="text-xl max-w-[750px] interFont">Book your tickets right now while they are still available !!!</p>
       </div>
-      <div>
+      <div class=" max-w-[99%] mx-auto">
         <!-- ticket layout  -->
-      <div class="flex p-8  gap-16 relative bg-white rounded-3xl">
+      <div class="flex flex-col lg:flex-row lg:p-8  lg:gap-16 relative bg-white rounded-3xl">
         <!-- left side -->
         <div>
         <!-- bus info heading -->
-        <div class=" flex flex-row flex-nowrap justify-between mb-9">
+        <div class=" flex flex-col lg:flex-row flex-nowrap justify-between mb-9">
             <!-- bus info -->
-          <div class="flex flex-row flex-nowrap gap-3">
-            <img src="./images/bus-logo.png" class="object-contain">
-            <div class="w-[380px]">
-            <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-start ralewayFont">Greenline Paribahan</h3>
+          <div class="  flex items-center flex-col lg:flex-row gap-3">
+            <img src="./images/bus-logo.png" class="max-w-[100px] object-contain">
+            <div class="lg:w-[380px]">
+            <h3 class="font-bold flex flex-row flex-nowrap text-4xl text-center lg:text-start ralewayFont">Greenline Paribahan</h3>
             <p class="text-start interFont">Coach-009-WEB ! AC_Business</p>
           </div>
           </div>
           <!-- seats left -->
-          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain interFont">40 Seats left</button>
+          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain interFont">20 Seats left</button>
         </div>
         <!-- bus info details -->
         <div>
@@ -172,7 +172,7 @@
         </div>
       </div>
         <!-- devider -->
-        <div class="   border-l-[2px] border-dashed border-[#1DD100] after:px-[1px] "></div>
+        <div class="  border-b-[2px] lg:border-l-[2px] border-dashed border-[#1DD100] after:px-[1px] "></div>
         <!-- right side -->
         <div class="flex flex-col items-center justify-center">
           <img src="./images/fare.png" >
@@ -183,9 +183,9 @@
         </div>
       </div>
       <!-- seat selection and billing -->
-      <div class=" mt-7 grid grid-cols-5 interFont">
+      <div class=" mt-7 grid grid-cols-1 lg:grid-cols-5 interFont">
         <!-- seat selection -->
-        <div class="col-span-3 bg-white p-8 rounded-l-3xl">
+        <div class=" col-span-1 lg:col-span-3 bg-white lg:p-8 rounded-l-3xl">
           <h2 class="text-start text-2xl font-semibold pb-6 border-b-[2px] border-dashed border-[#0307124d] ralewayFont">Select Your Seat</h2>
           <h3 class="flex justify-between my-4 pb-4 border-b-[2px] border-dashed border-[#0307124d]">
             <span class="flex gap-1 items-center ">
@@ -197,11 +197,11 @@
               Selected
             </span>
           </h3>
-          <div class="grid grid-cols-6 grid-rows-4 gap-4 ">
+          <div id="seatWrapper" class="grid grid-cols-6 grid-rows-4 gap-1 lg:gap-4 ">
                                   <!-- seats -->
                                   
             <div class="row-span-1 col-start-6">
-              <div class="px-6 py-3 bg-[#0307121a] rounded-xl"><img src="./images/steering-wheel.png"></div>
+              <div class=" flex items-center justify-center px-[4px] py-[2px] lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl"><img src="./images/steering-wheel.png" class="object-contain"></div>
             </div>
 
                                   <!-- row start -->
@@ -210,209 +210,143 @@
             </div>
 
             <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A1</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">A1</button>
             </div>
                                   
             <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A2</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">A2</button>
             </div>
                                   
             <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A3</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">A3</button>
             </div>
 
             <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">A4</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">A4</button>
             </div>
 
                                   <!-- row start -->
             <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">B</div>
+              <div class="px-4 py-2 lg:px-6 lg:py-3 bg-white rounded-xl">B</div>
             </div>
 
             <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B1</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">B1</button>
             </div>
                                   
             <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B2</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">B2</button>
             </div>
                                   
             <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B3</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">B3</button>
             </div>
 
             <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">B4</button>
-            </div>
-
-
-                                  <!-- row start -->
-            <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">C</div>
-            </div>
-
-            <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C1</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C2</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C3</button>
-            </div>
-
-            <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">C4</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">B4</button>
             </div>
 
 
                                   <!-- row start -->
             <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">D</div>
+              <div class="px-4 py-2 lg:px-6 lg:py-3 bg-white rounded-xl">C</div>
             </div>
 
             <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D1</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">C1</button>
             </div>
                                   
             <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D2</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">C2</button>
             </div>
                                   
             <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D3</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">C3</button>
             </div>
 
             <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">D4</button>
-            </div>
-
-                                  <!-- row start -->
-            <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">E</div>
-            </div>
-
-            <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E1</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E2</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E3</button>
-            </div>
-
-            <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">E4</button>
-            </div>
-
-                                  <!-- row start -->
-            <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">F</div>
-            </div>
-
-            <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F1</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F2</button>
-            </div>
-                                  
-            <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F3</button>
-            </div>
-
-            <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">F4</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">C4</button>
             </div>
 
 
                                   <!-- row start -->
             <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">G</div>
+              <div class="px-4 py-2 lg:px-6 lg:py-3 bg-white rounded-xl">D</div>
             </div>
 
             <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G1</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">D1</button>
             </div>
                                   
             <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G2</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">D2</button>
             </div>
                                   
             <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G3</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">D3</button>
             </div>
 
             <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">G4</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">D4</button>
             </div>
 
                                   <!-- row start -->
             <div class="row-span-1 col-start-0">
-              <div class="px-6 py-3 bg-white rounded-xl">H</div>
+              <div class="px-4 py-2 lg:px-6 lg:py-3 bg-white rounded-xl">E</div>
             </div>
 
             <div class="row-span-1 col-start-2">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H1</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">E1</button>
             </div>
                                   
             <div class="row-span-1 col-start-3">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H2</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">E2</button>
             </div>
                                   
             <div class="row-span-1 col-start-5">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H3</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">E3</button>
             </div>
 
             <div class="row-span-1 col-start-6">
-              <button class="btn border-none px-6 py-3 bg-[#0307121a] rounded-xl">H4</button>
+              <button class="btn border-none px-4 py-2 lg:px-6 lg:py-3 bg-[#0307121a] rounded-xl seat">E4</button>
             </div>
-
-
 
 
           </div>
         </div>
         <!-- billing section -->
-        <div class="p-8 col-span-2 bg-white rounded-r-3xl border-l-2 border-dashed border-[#0307124d]">
+        <div class=" col-span-1 lg:p-8 lg:col-span-2 bg-white rounded-r-3xl lg:border-l-2 border-dashed border-[#0307124d]">
           <h2 class="text-start text-2xl ralewayFont font-semibold mb-6 pb-6 border-b-[2px] border-dashed border-[#0307124d]">Select Your Seat</h2>
         <!-- billing -->
           <div class="p-4 bg-[#f7f8f8] rounded-xl">
             <!-- head -->
             <div class="w-full flex flex-row flex-nowrap justify-between  border-b-[2px] border-dashed border-[#0307124d] pb-4 mb-4 font-medium">
-              <span>Seat<sup class="bg-[#1dd100] px-[6px] rounded-[5px] text-white text-xs">4</sup></span>
+              <span>Seat<sup class="bg-[#1dd100] px-[6px] rounded-[5px] text-white text-xs">0</sup></span>
               <span>Class</span>
               <span>Price</span>
             </div>
             <!-- entries -->
             <div class="border-b-2 border-solid border-[#0307124d] pb-4 mb-4">
               <!-- ticket - 1 -->
-              <div class="w-full flex flex-row flex-nowrap justify-between">
+              <div id="ticket" class="hidden w-full flex flex-row flex-nowrap justify-between">
                 <span>C2</span>
                 <span>Economy</span>
                 <span>550</span>
               </div>
               <!-- ticket - 2 -->
-              <div class="w-full flex flex-row flex-nowrap justify-between">
+              <div id="ticket" class="hidden w-full flex flex-row flex-nowrap justify-between">
                 <span>C2</span>
                 <span>Economy</span>
                 <span>550</span>
               </div>
               <!-- ticket - 3 -->
-              <div class="w-full flex flex-row flex-nowrap justify-between">
+              <div id="ticket" class="hidden w-full flex flex-row flex-nowrap justify-between">
                 <span>C2</span>
                 <span>Economy</span>
                 <span>550</span>
               </div>
               <!-- ticket - 4 -->
-              <div class="w-full flex flex-row flex-nowrap justify-between">
+              <div id="ticket" class="hidden w-full flex flex-row flex-nowrap justify-between">
                 <span>C2</span>
                 <span>Economy</span>
                 <span>550</span>
@@ -429,17 +363,17 @@
             <input type="text"  placeholder="Have any coupon?" class="bg-white focus:outline-none min-w-[150px]">
             <button class="btn bg-[#1DD100] border-none text-white hover:bg-[#1DD10099]">Apply</button>
           </div>
-
+          <!-- grand total -->
           <div class="flex flex-row flex-nowrap justify-between  w-full mt-6 font-medium">
             <span>Grand Total</span>
-            <span>BDT <span>0000</span></span>
+            <span>BDT <span>0</span></span>
           </div>
           </div>
           <!-- user info -->
           <div class="pb-20">
             <label for="name" class="flex flex-col text-start mt-6 gap-2 font-semibold">Passenger Name*<input type="text" id="name" placeholder="Enter Your Name" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
 
-            <label for="name" class="flex flex-col text-start mt-6 gap-2 font-semibold">Phone Number*<input type="text" id="name" placeholder="Enter Your phone number" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
+            <label for="name" class="flex flex-col text-start mt-6 gap-2 font-semibold">Phone Number*<input type="number" id="name" placeholder="Enter Your phone number" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
             
             <label for="name" class="flex mb-6 flex-col text-start mt-6 gap-2 font-semibold">Email ID<input type="text" id="name" placeholder="Enter your email id" class="focus:outline-none font-normal p-4 rounded-xl border-[1px] border-solid border-[#0307121a] text-[16px]"></label>
 
@@ -460,7 +394,7 @@
                 </div>
               </div>
             </dialog>
-            <div class="mt-6 flex underline justify-between"><a href="#">Terms and Conditions</a> <a href="#">Cancellation Plicy</a></div>
+            <div class="text-sm mt-6 flex underline justify-between"><a href="#">Terms and Conditions</a> <a href="#">Cancellation Policy</a></div>
           </div>
         </div>
       </div>
@@ -468,13 +402,13 @@
   </div>
 </main>
 
-<footer class="bg-[#030712] p-32 text-white">
-<div class="flex justify-between pb-8 border-[#ffffff4d] border-dashed border-b-2">
+<footer class="bg-[#030712] p-4 lg:p-32 text-white">
+<div class="flex flex-col lg:flex-row justify-between pb-8 border-[#ffffff4d] border-dashed border-b-2">
   <div>
     <h2 class="font-extrabold text-4xl mb-4">P-Ticket</h2>
     <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
   </div>
-  <div class="flex flex-col gap-4 ">
+  <div class="flex flex-col mt-4 gap-4 ">
     <h3>Download our app</h3>
     <div class="flex flex-nowrap gap-1 border-white border-solid border-[2px] min-w-[265px] p-3 rounded-2xl">
       <img src="./images/playstore.png" class="object-contain " >
@@ -485,9 +419,9 @@
     </div>
   </div>
 </div>
-<div class="flex justify-between">
+<div class="flex flex-col lg:flex-row justify-between">
   <p>@all rights reserved, P-Ticket services limited.2024</p>
-  <div class="flex gap-8">
+  <div class="flex flex-col lg:flex-row gap-8">
     <a href="#">Terms & condition</a>
     <a href="#">Return & refund policy</a>
     <a href="#">Privacy & policy</a>
