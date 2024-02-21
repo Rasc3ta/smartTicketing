@@ -145,7 +145,7 @@
           </div>
           </div>
           <!-- seats left -->
-          <button class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain interFont">20 Seats left</button>
+          <button id="seatCount" class=" btn btn-outline bg-[#1dd1001a] border-[#1DD100] hover:border-[#1DD100]  text-[#1DD100] hover:bg-white hover:text-[#1DD100] "><img src="./images/seat-green.png" class="object-contain interFont">20 Seats left</button>
         </div>
         <!-- bus info details -->
         <div>
@@ -321,12 +321,12 @@
           <div class="p-4 bg-[#f7f8f8] rounded-xl">
             <!-- head -->
             <div class="w-full flex flex-row flex-nowrap justify-between  border-b-[2px] border-dashed border-[#0307124d] pb-4 mb-4 font-medium">
-              <span>Seat<sup class="bg-[#1dd100] px-[6px] rounded-[5px] text-white text-xs">0</sup></span>
+              <span>Seat<sup id="seatSelected" class="bg-[#1dd100] px-[6px] rounded-[5px] text-white text-xs">0</sup></span>
               <span>Class</span>
               <span>Price</span>
             </div>
             <!-- entries -->
-            <div class="border-b-2 border-solid border-[#0307124d] pb-4 mb-4">
+            <div id="ticketsSelected" class="border-b-2 border-solid border-[#0307124d] pb-4 mb-4">
               <!-- ticket - 1 -->
               <div id="ticket" class="hidden w-full flex flex-row flex-nowrap justify-between">
                 <span>C2</span>
@@ -355,7 +355,7 @@
               <!-- foot -->
               <div class="w-full flex flex-row flex-nowrap justify-between pb-4 mb-4 font-medium">
                 <span>Total Price</span>
-                <span>BDT <span id="price">0</span></span>
+                <span>BDT <span id="totalPrice">0</span></span>
               </div>
           
           <!-- coupon code -->
@@ -366,7 +366,7 @@
           <!-- grand total -->
           <div class="flex flex-row flex-nowrap justify-between  w-full mt-6 font-medium">
             <span>Grand Total</span>
-            <span>BDT <span>0</span></span>
+            <span>BDT <span id="grandTotal">0</span></span>
           </div>
           </div>
           <!-- user info -->
@@ -428,6 +428,6 @@
   </div>
 </div>
 </footer>
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
