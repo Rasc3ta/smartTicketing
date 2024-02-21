@@ -1,0 +1,52 @@
+
+const seatsSelected = [];
+
+const tickets = document.querySelectorAll('#ticket');
+
+const selectSeat = (Event) => {
+    const seatSelected = Event.target;
+    if (seatsSelected.length < 4) {
+        seatsSelected.push(seatSelected);
+
+        // adding 1 to selected seat count
+        const selectedTotalSeats = document.getElementById('seatSelected');
+        selectedTotalSeats.innerText = parseInt(selectedTotalSeats.innerText) + 1;
+        
+        // deducting 1 from total seat count
+        const seatLeft = document.getElementById('seatCount');
+        seatLeft.innerText = parseInt(seatLeft.innerText) - 1;
+        console.log("seats left : " + parseInt(seatLeft.innerText));
+
+        // changing bg color of selected seat
+        seatSelected.style.backgroundColor = "#1DD100";
+
+        // adding selected seat to bill
+        const currentTicket = tickets[seatsSelected.length - 1];
+        currentTicket.innerText = seatSelected.innerText;
+        currentTicket.parentElement.classList.remove('hidden');
+
+        // updating total price
+        const totalPrice = document.getElementById('totalPrice');
+        totalPrice.innerText = 550 * seatsSelected.length;
+
+        // updating grand total 
+        const grandTotal = document.getElementById('grandTotal');
+        grandTotal.innerText = totalPrice.innerText;
+        
+
+    }
+}
+
+
+
+
+
+// adding event listeners
+
+
+// adding event listener to seats
+const seatList = document.querySelectorAll('.seat');
+
+for (let seat of seatList) {
+    seat.addEventListener('click', selectSeat);
+}
