@@ -78,10 +78,13 @@ const applyCoupon = () => {
 
 const makeAvailable = (Event) => {
     const nextButton = document.getElementById('nextButton');
+    const phoneInput = document.getElementById('phone');
 
-    if (seatsSelected.length > 0) {
+    if (seatsSelected.length > 0 && phoneInput.value.trim() !== '') {
 
-        nextButton.removeAttribute('disabled');
+        nextButton.disabled = false;
+    } else {
+        nextButton.disabled = true;
         
     }
     
@@ -96,7 +99,7 @@ const makeAvailable = (Event) => {
 
 // adding next button availability 
 const phoneInput = document.getElementById('phone');
-phoneInput.addEventListener('keyup', makeAvailable)
+phoneInput.addEventListener('input', makeAvailable)
 
 
 // adding event listener to seats
